@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.card-demo {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-card {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  border-color: #ffcb05;
+  background-color: #fffbe6;
+  /* background-color: aliceblue; */
+}
+
+.pokemon-image {
+  width: 100px;
+  height: 100px;
+  /* object-fit: contain; */
+  margin-bottom: 10px;
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* centers the group */
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.info {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  color: #333;
+  text-align: center;
+}
+
+.info span {
+  font-weight: bold;
+  color: #000;
+  margin-left: 4px;
+} 
+
+

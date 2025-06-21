@@ -1,0 +1,21 @@
+1
+A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation.
+structure''
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+async/await is a cleaner way to write async code using Promises behind the scenes.
+const fetchPokemon=async()=>{
+    try{
+  const res=await fetch(API);
+   const data=await res.json();
+       setApiData(data);
+      setLoading(false);
+    }catch(error){
+        console.log(error);
+         setError(error);
+         setLoading(false);
+    }
+}
